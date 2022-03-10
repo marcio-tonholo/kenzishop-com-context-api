@@ -9,13 +9,20 @@ function CartCard({ item }) {
       <Figure>
         <img src={item.image} alt={item.title} />
       </Figure>
-      <p>{item.title}</p>
-      <p>
-        {item.price.toLocaleString("pt-br", {
-          style: "currency",
-          currency: "BRL",
-        })}
-      </p>
+      <div>
+        <p>
+          {item.title.length > 20
+            ? item.title.slice(0, 20) + "..."
+            : item.title}
+        </p>
+        <p>
+          {item.price.toLocaleString("pt-br", {
+            style: "currency",
+            currency: "BRL",
+          })}
+        </p>
+      </div>
+
       <Button onClick={() => removeFromCart(item.id)}>Remove from Cart</Button>
     </Container>
   );

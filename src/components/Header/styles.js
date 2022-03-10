@@ -8,6 +8,9 @@ export const Container = styled.header`
   height: 50px;
   box-shadow: 0px 0px 30px var(--red-0);
   margin-bottom: 10px;
+  @media (max-width: 800px) {
+    padding: 0;
+  }
 `;
 
 export const Span = styled.span`

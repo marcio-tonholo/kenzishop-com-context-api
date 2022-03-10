@@ -12,6 +12,9 @@ export const List = styled.ul`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 70%;
+
   list-style: none;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;

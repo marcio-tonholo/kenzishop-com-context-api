@@ -7,7 +7,7 @@ export const Container = styled.li`
   border: 1px solid var(--red-0);
   margin: 10px;
   padding-bottom: 10px;
-  width: 30%;
+  width: 300px;
   box-shadow: 3px 3px 5px var(--red-1);
   p {
     margin: 10px 0;

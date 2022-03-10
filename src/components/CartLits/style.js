@@ -5,18 +5,24 @@ export const Container = styled.main`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export const List = styled.ul`
+  width: 70%;
   background-color: var(--black-0);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 70%;
   list-style: none;
   border-radius: 8px;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `;
 export const CartVazio = styled.div`
   width: 70%;
@@ -33,6 +39,9 @@ export const CartVazio = styled.div`
     font-size: 60px;
     margin-bottom: 10px;
   }
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 export const Total = styled.div`
@@ -43,7 +52,6 @@ export const Total = styled.div`
   border-radius: 8px;
   border: 2px solid var(--red-0);
   display: flex;
-
   justify-content: space-between;
   flex-direction: column;
   padding: 5px;
@@ -57,5 +65,10 @@ export const Total = styled.div`
     border: none;
     padding: 2px;
     border-radius: 30px;
+  }
+
+  @media (max-width: 800px) {
+    align-self: center;
+    margin-top: 20px;
   }
 `;

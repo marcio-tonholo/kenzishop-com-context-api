@@ -23,7 +23,6 @@ export const Form = styled.form`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 30%;
   }
 `;
 export const Input = styled.input`
@@ -40,12 +39,12 @@ export const Input = styled.input`
 
 export const Button = styled.button`
   background-color: var(--red-1);
-  width: 40%;
+  width: 90px;
   color: #fff;
   padding: 3px 0;
   border: none;
   border-radius: 30px;
-
+  margin-right: 5px;
   :hover {
     background-color: var(--red-0);
     color: var(--black-1);

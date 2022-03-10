@@ -5,7 +5,7 @@ import { FiLogIn } from "react-icons/fi";
 import { CartContext } from "../../providers/cart";
 import { useContext } from "react";
 function Header() {
-  const { Cart } = useContext(CartContext);
+  const { cart } = useContext(CartContext);
   const history = useHistory();
   return (
     <Container>
@@ -17,7 +17,7 @@ function Header() {
       </Span>
 
       <Span>
-        <p>{Cart.length}</p>
+        <p>{cart.length}</p>
         <div onClick={() => history.push("/cart")}>
           <FaShoppingCart />
           Cart

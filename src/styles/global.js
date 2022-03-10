@@ -22,4 +22,18 @@ body{
         --red-0:#ff2e2e;
         --red-1:#a61e1e;
     }
+
+    body::-webkit-scrollbar {
+  width: 12px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: none;        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:#212529;  
+  border-radius: 20px;      
+  border: none; 
+}
 `;
